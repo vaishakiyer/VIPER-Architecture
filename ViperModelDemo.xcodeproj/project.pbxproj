@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		526C527322BA05CE00D00962 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C527222BA05CE00D00962 /* AppDelegate.swift */; };
-		526C527522BA05CE00D00962 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C527422BA05CE00D00962 /* ViewController.swift */; };
 		526C527822BA05CE00D00962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526C527622BA05CE00D00962 /* Main.storyboard */; };
 		526C527B22BA05CE00D00962 /* ViperModelDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 526C527922BA05CE00D00962 /* ViperModelDemo.xcdatamodeld */; };
 		526C527D22BA05D000D00962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526C527C22BA05D000D00962 /* Assets.xcassets */; };
 		526C528022BA05D000D00962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526C527E22BA05D000D00962 /* LaunchScreen.storyboard */; };
 		526C528B22BA05D000D00962 /* ViperModelDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C528A22BA05D000D00962 /* ViperModelDemoTests.swift */; };
 		526C529622BA05D000D00962 /* ViperModelDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C529522BA05D000D00962 /* ViperModelDemoUITests.swift */; };
+		526C52AA22BA06CE00D00962 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C52A922BA06CE00D00962 /* NewsViewController.swift */; };
+		526C52AC22BA0B3000D00962 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C52AB22BA0B3000D00962 /* NewsTableViewCell.swift */; };
+		526C52AE22BA12EE00D00962 /* NewsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C52AD22BA12EE00D00962 /* NewsProtocols.swift */; };
+		52FB678522BA268C0088B90A /* LiveNewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB678422BA268C0088B90A /* LiveNewsPresenter.swift */; };
+		52FB678722BA444E0088B90A /* LiveNewsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB678622BA444E0088B90A /* LiveNewsInteractor.swift */; };
+		52FCA19A22BCA7D4003DC920 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FCA19922BCA7D4003DC920 /* NewsModel.swift */; };
+		52FCA19C22BCAB57003DC920 /* NewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FCA19B22BCAB57003DC920 /* NewsRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,6 @@
 /* Begin PBXFileReference section */
 		526C526F22BA05CE00D00962 /* ViperModelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperModelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526C527222BA05CE00D00962 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		526C527422BA05CE00D00962 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		526C527722BA05CE00D00962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		526C527A22BA05CE00D00962 /* ViperModelDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViperModelDemo.xcdatamodel; sourceTree = "<group>"; };
 		526C527C22BA05D000D00962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		526C529122BA05D000D00962 /* ViperModelDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperModelDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		526C529522BA05D000D00962 /* ViperModelDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperModelDemoUITests.swift; sourceTree = "<group>"; };
 		526C529722BA05D000D00962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526C52A922BA06CE00D00962 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		526C52AB22BA0B3000D00962 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		526C52AD22BA12EE00D00962 /* NewsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsProtocols.swift; sourceTree = "<group>"; };
+		52FB678422BA268C0088B90A /* LiveNewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNewsPresenter.swift; sourceTree = "<group>"; };
+		52FB678622BA444E0088B90A /* LiveNewsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNewsInteractor.swift; sourceTree = "<group>"; };
+		52FCA19922BCA7D4003DC920 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		52FCA19B22BCAB57003DC920 /* NewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +111,13 @@
 		526C527122BA05CE00D00962 /* ViperModelDemo */ = {
 			isa = PBXGroup;
 			children = (
+				526C52A822BA069100D00962 /* Protocol */,
+				526C52A722BA068300D00962 /* Route */,
+				526C52A622BA067B00D00962 /* Entity */,
+				526C52A522BA066B00D00962 /* Interactor */,
+				526C52A422BA065000D00962 /* Presenter */,
+				526C52A322BA05DD00D00962 /* View */,
 				526C527222BA05CE00D00962 /* AppDelegate.swift */,
-				526C527422BA05CE00D00962 /* ViewController.swift */,
 				526C527622BA05CE00D00962 /* Main.storyboard */,
 				526C527C22BA05D000D00962 /* Assets.xcassets */,
 				526C527E22BA05D000D00962 /* LaunchScreen.storyboard */,
@@ -126,6 +143,55 @@
 				526C529722BA05D000D00962 /* Info.plist */,
 			);
 			path = ViperModelDemoUITests;
+			sourceTree = "<group>";
+		};
+		526C52A322BA05DD00D00962 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				526C52A922BA06CE00D00962 /* NewsViewController.swift */,
+				526C52AB22BA0B3000D00962 /* NewsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		526C52A422BA065000D00962 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				52FB678422BA268C0088B90A /* LiveNewsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		526C52A522BA066B00D00962 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				52FB678622BA444E0088B90A /* LiveNewsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		526C52A622BA067B00D00962 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				52FCA19922BCA7D4003DC920 /* NewsModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		526C52A722BA068300D00962 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				52FCA19B22BCAB57003DC920 /* NewsRouter.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		526C52A822BA069100D00962 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				526C52AD22BA12EE00D00962 /* NewsProtocols.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +325,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526C527522BA05CE00D00962 /* ViewController.swift in Sources */,
+				52FCA19A22BCA7D4003DC920 /* NewsModel.swift in Sources */,
+				52FB678722BA444E0088B90A /* LiveNewsInteractor.swift in Sources */,
+				526C52AE22BA12EE00D00962 /* NewsProtocols.swift in Sources */,
+				52FB678522BA268C0088B90A /* LiveNewsPresenter.swift in Sources */,
+				52FCA19C22BCAB57003DC920 /* NewsRouter.swift in Sources */,
+				526C52AA22BA06CE00D00962 /* NewsViewController.swift in Sources */,
 				526C527B22BA05CE00D00962 /* ViperModelDemo.xcdatamodeld in Sources */,
+				526C52AC22BA0B3000D00962 /* NewsTableViewCell.swift in Sources */,
 				526C527322BA05CE00D00962 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
