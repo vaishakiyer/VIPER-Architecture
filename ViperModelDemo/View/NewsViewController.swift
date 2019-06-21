@@ -18,8 +18,7 @@ class NewsViewController: UIViewController,PresenterToViewProtocol {
         super.viewDidLoad()
         
         newsTable.dataSource = self
-        newsTable.estimatedRowHeight = 202
-        newsTable.rowHeight = UITableView.automaticDimension
+        newsTable.delegate = self
         presenter?.updateView()
         // Do any additional setup after loading the view.
     }
@@ -71,6 +70,24 @@ extension NewsViewController: UITableViewDelegate,UITableViewDataSource{
         cell?.thumbnail.downloaded(from: articleArray?[indexPath.row].urlToImage ?? "", contentMode: .scaleAspectFit)
         
         return cell!
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        let approximateWidth = newsTable.frame.width - 135
+        let size = CGSize(width: approximateWidth, height: 1000)
+        let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17)]
+        
+        let estimatedFrame1 = NSString(string: (articleArray?[indexPath.row].articleDescription)!).boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
+        
+        let estimatedFrame2 = NSString(string: (articleArray?[indexPath.row].title)!).boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
+        
+        return estimatedFrame1.height + estimatedFrame2.height + 120
+        //return 202
+     
+        
+        
     }
 }
 
